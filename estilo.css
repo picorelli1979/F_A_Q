@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+html {
+
+      background: linear-gradient(#af67e9,#6565e7 );
+      min-height: 100%;
+}
+
+body{
+       font-family: sans-serif;
+
+}
+
+main{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       min-height: 100vh;
+}
+
+.faq{
+       width: 70%;
+       min-height: 450px;
+       box-shadow: 0px,25px,50px;
+       background-color: #fff;
+       display: flex;
+       align-items: center;
+       border-radius: 30px; 
+}
+
+.faq .ilustracao{
+
+       position: relative;
+       left: -120px;
+       width: 50%;
+       margin: 50px 0;
+}
+
+.faq .conteudo {
+
+      width: 38%;
+      padding-bottom: 20px;
+}
+
+.faq .conteudo h1 {
+
+    font-size: 38px; 
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.faq .conteudo .itens{
+
+   list-style-type: none;
+}
+
+.faq .conteudo .itens .iten{
+
+   cursor: pointer;
+   background-image: url(./icone-seta-pra-baixo.png);
+   background-repeat: no-repeat;
+   background-position: top 8px right 0;
+   background-size: 20px;
+   border-bottom: 2px solid;
+   margin: 10px 0;
+}
+
+.faq .conteudo .itens .iten:last-child{
+
+    border-bottom: none;
+
+}
+
+/* ESTILO DO ITEM ATIVO*/
+
+.faq .itens .iten.ativo h2 {
+  font-weight: 700;
+}
+
+.faq .itens .iten.ativo .resposta{
+  display: block;
+}
+
+.faq .itens .iten.ativo {
+background-image: url(./icone-seta-pra-cima.png);
+}
+
+
+.iten .pergunta{
+
+   padding-bottom: 15px;
+   font-size: 25px;
+   width: 80%;
+   transition: 0,2s ease;
+}
+
+.iten .pergunta:hover {
+
+    color : orange;
+}
+
+.iten .resposta {
+    display: none;
+    padding-bottom: 15px;
+    font-size: 20px;
+    color: red;
+}
+
+@media(max-widht: 1140px){
+
+      .faq {
+
+           flex-direction: column;
+           width: 90%;
+      }
+
+      .faq .conteudo{
+
+           width: 100%;
+      } 
+
+      .faq .conteudo h1{
+
+         font-size: 24px;
+         text-align: center;
+
+      } 
+
+       .faq .itens {
+
+          width: 80%;
+          margin: 0 auto;
+       }
+
+       .faq .itens .pergunta{
+
+           font-size: 15px;
+       }
+
+       .faq .ilustracao {
+          
+              width: 40%;
+              left: 0;
+              margin: 30px 0;           
+       }
+
+}
+
+@media(max-widht: 425px){
+        .faq{
+
+          height: 540px;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
